@@ -16,7 +16,7 @@ jobs:
 
     - name: GetTime
       id: date
-      run: echo "::set-output name=date::$(date +'%Y-%m-%d %H:%M:%S CST')"
+      run: echo "date=$(date +'%Y-%m-%d %H:%M:%S CST')" >> $GITHUB_OUTPUT
 
     - name: Update
       run: |
